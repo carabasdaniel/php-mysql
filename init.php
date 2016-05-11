@@ -41,8 +41,7 @@ CREATE TABLE MESSAGES_TABLE (
  TIME TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
  MESSAGE varchar(255) DEFAULT NULL,
  PRIMARY KEY (ID)
-) DEFAULT CHARSET=utf8
-";
+)";
 
 if ($mysqli->query($sqlTable)) {
     echo "Table created successfully!<br>";
